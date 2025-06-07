@@ -25,7 +25,7 @@
             /* Hide canvas initially */
         }
 
-        #instructions {
+        #instructions, #credits {
             position: fixed;
             top: 0;
             left: 0;
@@ -41,21 +41,34 @@
             z-index: 1000;
         }
 
-        #instructions h1 {
+        #credits {
+            display: none;
+        }
+
+        h1 {
             font-size: 2em;
             margin-bottom: 1em;
         }
 
-        #instructions p {
+        p {
             font-size: 1.2em;
             margin: 0.5em 0;
         }
 
-        #instructions .key {
+        .key {
             background: #333;
             padding: 0.2em 0.5em;
             border-radius: 4px;
             margin: 0 0.2em;
+        }
+
+        #header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #warning {
+            display: none;
         }
     </style>
 </head>
@@ -63,12 +76,24 @@
 <body>
     <div id="instructions">
         <h1>Controls</h1>
-        <p>Press <span class="key">Space</span> to start the animation</p>
         <p>Press <span class="key">F</span> to toggle fullscreen</p>
+        <p>Press <span class="key">Space</span> to start</p>
+        <h1>You're about to witness a demo by Veik</h1>
+        <p id="warning">Froze at start and music playing? This is totally normal and to be expected. (thanks Bauble, Strudel and JavaScript I suppose) Please stay calm!</p>
+    </div>
+    <div id="credits">
+        <p>Thank you for watching</p>
+        <h1>Controls</h1>
+        <p>by Veik</p>
+        <p>my first attempt at bauble and strudel. fun but maybe a bit hard on the edges for demo making</p>
+        <p>you may exit fullscreen from esc and close the demo</p>
     </div>
     <canvas></canvas>
     <script src="bauble-player.iife.js"></script>
-    <script src="app.js"></script>
+    <script src="strudel.js"></script>
+    <script type="module" src="app.js" crossorigin="anonymous"></script>
+    <!doctype html>
+
 </body>
 
 </html>

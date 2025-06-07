@@ -1,0 +1,8 @@
+{
+  "_base": "./",
+  "amen": ["samples/amen2.WAV"],
+  "bd": ["samples/bd.wav"],
+  "hh": ["samples/hh.wav"],
+  "sd": ["samples/sd.wav"],
+  "rd": ["samples/rd.wav"]
+}
